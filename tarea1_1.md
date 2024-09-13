@@ -60,7 +60,10 @@ Date: Fri Sep 13 15:27:01 2024 +0100
 ----
 
 Ahora, guardaremos los cambios mediante el comando PUSH en el repositorio remoto.
+Para ello, simplemente utilizamos el comando push:
+--> git push
 
+Si revisamos en la web, deberíamos ver todos los archivos que hayamos subido desde nuestro repositorio local.
 
 
 
