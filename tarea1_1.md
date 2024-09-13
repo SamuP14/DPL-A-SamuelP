@@ -65,6 +65,15 @@ Para ello, simplemente utilizamos el comando push:
 
 Si revisamos en la web, deberíamos ver todos los archivos que hayamos subido desde nuestro repositorio local.
 
+Ahora, crearemos una carpeta privada y un fichero privado.txt, para lo cual usarremos los siguientes comandos:
+--> touch privado.txt
+    Crea el fichero
+--> mkdir privada
+    Crea la carpeta
 
+Para que github reconozca la carpeta, debe tener algún contenido, por lo que meteremos en ella el fichero que acabamos de crear:
+--> mv privado.txt ./privada/
+
+Ahora, guardamos los cambios en el repositorio remoto.
 
 
