@@ -76,4 +76,8 @@ Para que github reconozca la carpeta, debe tener algún contenido, por lo que me
 
 Ahora, guardamos los cambios en el repositorio remoto.
 
+Como son archivos privados, hagamos que sean ignorados por git. Para ello, crearemos el fichero .gitingnore:
+--> touch .gitignore
+En el explorador de archivos marcaremos la opción de mostrar los elementos ocultos, y veremos que se ha creado el fichero .gitignore y la carpeta .git
+
 
