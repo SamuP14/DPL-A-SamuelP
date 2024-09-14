@@ -71,8 +71,7 @@ Ahora, crearemos una carpeta privada y un fichero privado.txt, para lo cual usar
 --> mkdir privada
     Crea la carpeta
 
-Para que github reconozca la carpeta, debe tener algún contenido, por lo que meteremos en ella el fichero que acabamos de crear:
---> mv privado.txt ./privada/
+Para que github reconozca la carpeta, debe tener algún contenido, por lo que copiaremos en ella el fichero que acabamos de crear.
 
 Ahora, guardamos los cambios en el repositorio remoto.
 
