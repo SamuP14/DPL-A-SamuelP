@@ -95,5 +95,8 @@ Vamos a crear un fichero y un tag para el repositorio:
 --> git tag -a v0.1 -m "Version 0.1"
     Creamos la etiqueta, o tag, v0.1, y le damos la descripción "Version 0.1".
 
+Para enviar el tag al repositorio remoto, usaremos este comando:
+--> git push origin v0.1
+
 Guardamos los cambios en el repositorio remoto y podremos ver el fichero y la etiqueta, cada cual en su respectivo apartado.
 
