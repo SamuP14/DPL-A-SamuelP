@@ -83,3 +83,7 @@ Dentro del fichero .gitignore añadiremos los elementos que querramos borrar, en
     privada/
     privado.txt
 
+Para que al guardar los cambios reconozca los elementos ocultos y no los muestre en el repositorio remoto, tendremos que borrar el caché:
+--> git rm --cached privado.txt
+--> git rm --cached ./privada
+
