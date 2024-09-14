@@ -88,3 +88,12 @@ Para que al guardar los cambios reconozca los elementos ocultos y no los muestre
 --> git rm --cached ./privada
 
 Ahora, si comprobamos el repositorio remoto, veremos que los elementos no se muestran, mientras que en local podemos seguir viéndolos.
+
+Vamos a crear un fichero y un tag para el repositorio:
+--> touch 1.txt
+    Creamos el fichero 1.txt
+--> git tag -a v0.1 -m "Version 0.1"
+    Creamos la etiqueta, o tag, v0.1, y le damos la descripción "Version 0.1".
+
+Guardamos los cambios en el repositorio remoto y podremos ver el fichero y la etiqueta, cada cual en su respectivo apartado.
+
