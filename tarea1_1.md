@@ -87,3 +87,4 @@ Para que al guardar los cambios reconozca los elementos ocultos y no los muestre
 --> git rm --cached privado.txt
 --> git rm --cached ./privada
 
+Ahora, si comprobamos el repositorio remoto, veremos que los elementos no se muestran, mientras que en local podemos seguir viéndolos.
