@@ -79,4 +79,7 @@ Como son archivos privados, hagamos que sean ignorados por git. Para ello, crear
 --> touch .gitignore
 En el explorador de archivos marcaremos la opción de mostrar los elementos ocultos, y veremos que se ha creado el fichero .gitignore y la carpeta .git
 
+Dentro del fichero .gitignore añadiremos los elementos que querramos borrar, en este caso
+    privada/
+    privado.txt
 
