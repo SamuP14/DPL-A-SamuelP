@@ -100,3 +100,15 @@ Para enviar el tag al repositorio remoto, usaremos este comando:
 
 Guardamos los cambios en el repositorio remoto y podremos ver el fichero y la etiqueta, cada cual en su respectivo apartado.
 
+Ahora vamos a activar la autentificación en dos pasos:
+En el apartado de nuestro perfil, iremos a la sección de "Password and authentication". (ver 2FA-01.png)
+Una vez ahí, nos desplazaremos hasta donde dice "Two-factor authentication" y pulsamos sobre el botón verde. (ver 2FA-02.png)
+Nos pedirá instalar una app o extensión, pero vamos a tomar la opción de verificar mediante SMS. Para ello, seleccionamos la opción. (ver 2FA-03.png)
+Le daremos a verificar y rellenaremos el captcha. (ver 2FA-04.png)
+Pondremos nuestro teléfono y pediremos que envíe el código de autentificación. (ver 2FA-05.png)
+Una vez pongamos el código, nos pedirá que descarguemos los códigos de recuperación. Luego, le daremos al botón que indica que ya lo hemos guardado. (ver 2FA-06.png)
+Una vez hecho, le daremos al botón verde. (ver 2FA-07.png)
+
+Vamos a seguir el repositorio de algún compañero.
+Para ello, iremos a la barra de busqueda (ver FCM-01.png) y buscaremos el nombre de usuario de nuestro compañero (ver FCM-02.png - 1). En este caso buscamos a Samuel Sánchez. Una vez encontrado, iremos al apartado "Code" (ver FCM-02.png - 2) y seleccionaremos su repositorio (ver FCM-02.png - 3). Una vez dentro, en la parte superior, buscaremos el nombre de usuario y pincharemos en él (ver FCM-03.png). Finalmente, le daremos al botón "Follow" (ver FCM-04.png).
+Aprovechando que estamos dentro de su repositorio, le daremos una estrella. Para ello iremos al apartado "Star" (ver GS-01.png) y lo pulsaremos, cambiando a "Starred" y poniéndose la estrella de color amarillo (ver GS-02.png).
