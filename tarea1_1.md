@@ -110,5 +110,9 @@ Una vez pongamos el código, nos pedirá que descarguemos los códigos de recupe
 Una vez hecho, le daremos al botón verde. (ver 2FA-07.png)
 
 Vamos a seguir el repositorio de algún compañero.
-Para ello, iremos a la barra de busqueda (ver FCM-01.png) y buscaremos el nombre de usuario de nuestro compañero (ver FCM-02.png - 1). En este caso buscamos a Samuel Sánchez. Una vez encontrado, iremos al apartado "Code" (ver FCM-02.png - 2) y seleccionaremos su repositorio (ver FCM-02.png - 3). Una vez dentro, en la parte superior, buscaremos el nombre de usuario y pincharemos en él (ver FCM-03.png). Finalmente, le daremos al botón "Follow" (ver FCM-04.png).
-Aprovechando que estamos dentro de su repositorio, le daremos una estrella. Para ello iremos al apartado "Star" (ver GS-01.png) y lo pulsaremos, cambiando a "Starred" y poniéndose la estrella de color amarillo (ver GS-02.png).
+Para ello, iremos a la barra de busqueda (ver FCM-01.png) y buscaremos el nombre de usuario de nuestro compañero (ver FCM-02.png - 1). En este caso buscamos a Samuel Sánchez. 
+Una vez encontrado, iremos al apartado "Code" (ver FCM-02.png - 2) y seleccionaremos su repositorio (ver FCM-02.png - 3). Una vez dentro, en la parte superior, 
+buscaremos el nombre de usuario y pincharemos en él (ver FCM-03.png). Finalmente, le daremos al botón "Follow" (ver FCM-04.png).
+Aprovechando que estamos dentro de su repositorio, le daremos una estrella. 
+Para ello iremos al apartado "Star" (ver GS-01.png) y 
+lo pulsaremos, cambiando a "Starred" y poniéndose la estrella de color amarillo (ver GS-02.png).
