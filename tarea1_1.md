@@ -117,10 +117,10 @@ Aprovechando que estamos dentro de su repositorio, le daremos una estrella.
 Para ello iremos al apartado "Star" (ver GS-01.png) y lo pulsaremos, cambiando a "Starred" y poniéndose la estrella de color amarillo (ver GS-02.png).
 
 
--------------------
-|        |        |
-|--------|--------|
-|        |        |
-|--------|--------|
-|        |        |
--------------------
+--------------------------------------------------------------------
+| Samuel Sánchez  |   https://github.com/Shulkioras/DPL_A_SamuelS  |
+|-----------------|------------------------------------------------|
+| David Luis      | https://github.com/David-Luis-Mora/DPL_A_David |
+|-----------------|------------------------------------------------|
+|                 |                                                |
+--------------------------------------------------------------------
