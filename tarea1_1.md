@@ -123,4 +123,6 @@ Para ello iremos al apartado "Star" (ver GS-01.png) y lo pulsaremos, cambiando a
 | David Luis      | https://github.com/David-Luis-Mora/DPL_A_David |
 |-----------------|------------------------------------------------|
 | Samuel Sánchez  |   https://github.com/Shulkioras/DPL_A_SamuelS  |
+|-----------------|------------------------------------------------|
+|   Mario Pérez   |https://github.com/SuperWarioGalaxy/DPL_A_MARIO |
 --------------------------------------------------------------------
