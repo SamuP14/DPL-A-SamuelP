@@ -230,7 +230,7 @@ Haremos clic en "Create organization" (Crear organización) para finalizar el pr
 
 # CREAR EQUIPOS
 
-1. Accede a tu organización:
+1. Iniciar sesión en GitHub:
 Iremos a GitHub e iniciaremos sesión con nuestra cuenta, si aún no lo hemos hecho.
 Haremos clic en nuestra foto de perfil en la esquina superior derecha y seleccionaremos tu organización (orgdpl-SamuP14).
 
