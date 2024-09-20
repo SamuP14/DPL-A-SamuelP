@@ -219,9 +219,34 @@ Haremos clic en nuestra foto de perfil en la esquina superior derecha y seleccio
 Haremos clic en el botón "New organization" (Nueva organización).
 Seleccionaremos un plan (puede ser el gratuito).
 Completamos la información requerida, como el nombre de la organización. Para nuestro caso, ingresaremos: 
+
 orgdpl-SamuP14.
+
 4. Configurar la organización:
 Completaremos los detalles adicionales como la descripción y las preferencias de visibilidad.
+
 5. Finalizar:
 Haremos clic en "Create organization" (Crear organización) para finalizar el proceso.
 
+# CREAR EQUIPOS
+
+1. Accede a tu organización:
+Iremos a GitHub e iniciaremos sesión con nuestra cuenta, si aún no lo hemos hecho.
+Haremos clic en nuestra foto de perfil en la esquina superior derecha y seleccionaremos tu organización (orgdpl-SamuP14).
+
+2. Ir a la configuración de la organización:
+Haremos clic en la pestaña "Settings" (Configuración) en la parte superior de la página de la organización.
+
+3. Crear el equipo "administradores":
+En la barra lateral izquierda, seleccionamos "Teams" (Equipos).
+Hacemos clic en "New team" (Nuevo equipo).
+Nombramos el equipo "administradores".
+Configuramos los permisos como "Admin" para que tengan más control sobre los repositorios.
+
+4. Crear el equipo "colaboradores":
+Repetiremos el proceso haciendo clic en "New team" (Nuevo equipo) nuevamente.
+Nombramos el equipo "colaboradores".
+Configuramos los permisos como "Write" o "Read" (menos permisos que el administrador).
+
+5. Finalizar:
+Debemos asegurarnos de revisar los permisos y la configuración de cada equipo para garantizar que estén configurados correctamente.
