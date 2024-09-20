@@ -38,8 +38,190 @@ Esto subirá la rama v0.2 al remoto (normalmente llamado origin). Para ver las r
 
 # MERGE DIRECTO
 
-Primero, nos aseguraremos de estar en la rama master:
+Primero, nos aseguraremos de estar en la rama main:
 
---> git checkout master
+--> git checkout main
 
+Una vez en la rama master, realiza el merge con la rama v0.2:
+
+--> git merge v0.2
+
+Si hay conflictos, Git te los indicará. En este caso se nos muestra lo siguiente:
+
+--> CONFLICTO (modificar / eliminar): tarea1_1.md eliminado en v0.2 y modificado en HEAD. Versión HEAD de tarea1_1.md restante en el árbol.
+-->Fusión automática falló; arregle los conflictos y luego realice un commit con el resultado.
+
+Debemos corregirlos manualmente. Luego de resolverlos, anos aseguraremos de añadir los archivos modificados y confirmar el merge:
+
+--> git add <archivo_resuelto>
+--> git commit
+--> git push origin main
+
+# MERGE CON CONFLICTO
+
+Ahora vamos a forzar un conflicto. Para ello, primero nos colocaremos en la rama main:
+
+--> git checkout main
+
+Luego, editamos el fichero 1.txt y añadimos el texto Hola con este comando:
+
+--> echo "Hola" > 1.txt
+
+Podemos comprobar que se ha guardado correctamente:
+
+--> cat 1.txt
+
+Después, hacemos el commit de los cambios:
+
+--> git add 1.txt
+--> git commit -m "Añadido 'Hola' en el fichero 1.txt en master"
+
+Ahora, cambiamos a la rama v0.2:
+
+--> git checkout v0.2
+
+Luego, editamos el fichero 1.txt y añadimos el texto Hola con este comando:
+
+--> echo "Adios" > 1.txt
+
+Podemos comprobar que se ha guardado correctamente:
+
+--> cat 1.txt
+
+Después, hacemos el commit de los cambios:
+
+--> git add 1.txt
+--> git commit -m "Añadido 'Adios' en el fichero 1.txt en v0.2"
+
+Ahora, nos posicionaremos de nuevo en la rama principal:
+
+--> git checkout main
+
+Al hacerlo, nos indica lo siguiente:
+
+--> error: Los siguientes archivos sin seguimiento en el árbol de trabajo serán sobrescritos al actualizar el árbol de trabajo:
+--> 	1.txt
+--> Por favor, muévelos o elimínalos antes de cambiar de rama.
+--> Abortando
+
+Para solucionarlo, en la rama actual, que debería ser v0.2, haremos lo siguiente:
+
+--> Cambiado a rama 'main'
+--> Tu rama está adelantada a 'origin/main' por 1 commit.
+-->   (usa "git push" para publicar tus commits locales)
+
+Intentaremos realizar el merge:
+
+--> git merge v0.2
+
+Nos devolverá lo siguiente:
+
+--> Auto-fusionando 1.txt
+--> CONFLICTO (agregar/agregar): Conflicto de fusión en 1.txt
+--> Fusión automática falló; arregle los conflictos y luego realice un commit con el resultado.
+
+Para arreglar el error, haremos lo siguiente:
+En la rama main, modificaremos el fichero de esta forma:
+
+--> echo "Hola - Adios" > 1.txt
+
+Guardamos los cambios y nos movemos a v0.2:
+
+--> git add 1.txt 
+--> git commit -m "Resolviendo conflicto"
+--> git checkout v0.2
+
+Repetimos lo mismo en esta rama:
+
+--> echo "Hola - Adios" > 1.txt
+--> git add 1.txt 
+--> git commit -m "Resolviendo conflicto"
+
+Volvemos a la rama principal:
+
+--> git checkout main
+
+Nos dirá lo siguiente:
+
+--> Cambiado a rama 'main'
+--> Tu rama está adelantada a 'origin/main' por 1 commit.
+-->   (usa "git push" para publicar tus commits locales)
+
+Trataremos de hacer el merge:
+
+--> git merge v0.2
+
+Nos debería dar el siguiente resultado:
+
+--> Merge made by the 'ort' strategy.
+
+Habremos logrado resolver el conflicto.
+
+# LISTADO DE RAMAS
+
+Para listar las ramas que no han sido fusionadas:
+
+--> git branch --no-merged
+
+Para listar las ramas que sí han sido fusionadas:
+
+--> git branch --merged
+
+# BORRAR RAMA
+
+Primero, nos cambiaremos a la rama v0.2 si no lo estamos ya:
+
+--> git checkout v0.2
+
+Luego, crearemos la etiqueta v0.2:
+
+--> git tag -a v0.2 -m "Versión 0.2"
+
+Con esto hemos creado la etiqueta con la descripción indicada entre comillas.
+Ahora empujamos la etiqueta al repositorio remoto:
+
+--> git push origin refs/tags/v0.2
+
+Para eliminar la rama en local, usaremos el siguiente comando desde la rama main:
+
+--> git branch -d v0.2
+
+Nos devolverá lo siguiente:
+
+--> Eliminada la rama v0.2 (era 04d0cd5).
+
+Para eliminar la rama en remoto, usaremos el siguiente comando:
+
+--> git push origin --delete refs/heads/v0.2
+
+Nos devolverá lo siguiente:
+
+--> To https://github.com/SamuP14/DPL-A-SamuelP
+--> - [deleted]         v0.2
+
+Ahora, si nos dirigimos al repositorio remoto, veremos que ha desaparecido la rama v0.2
+
+# LISTADO DE CAMBIOS
+
+Para listar los commits junto con sus ramas y tags en Git, podemos usar el siguiente comando:
+
+--> git log --decorate --oneline --all
+
+# CREAR UNA ORGANIZACIÓN
+
+1. Iniciar sesión en GitHub:
+Iremos a GitHub e iniciaremos sesión con nuestra cuenta, si aún no lo hemos hecho.
+
+2. Acceder a la sección de organizaciones:
+Haremos clic en nuestra foto de perfil en la esquina superior derecha y seleccionaremos "Your organizations" (Tus organizaciones).
+
+3. Crear una nueva organización:
+Haremos clic en el botón "New organization" (Nueva organización).
+Seleccionaremos un plan (puede ser el gratuito).
+Completamos la información requerida, como el nombre de la organización. Para nuestro caso, ingresaremos: 
+orgdpl-SamuP14.
+4. Configurar la organización:
+Completaremos los detalles adicionales como la descripción y las preferencias de visibilidad.
+5. Finalizar:
+Haremos clic en "Create organization" (Crear organización) para finalizar el proceso.
 
