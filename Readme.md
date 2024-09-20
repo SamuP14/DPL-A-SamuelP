@@ -2,7 +2,7 @@
 
 Para crear una nueva rama v0.2 y posicionarse en ella en Git:
 
-git checkout -b v0.2
+--> git checkout -b v0.2
 
 Esto crea la rama y automáticamente nos cambia a ella.
 Para verificar que estamos en la rama correcta usamos el siguiente comando:
