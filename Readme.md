@@ -268,3 +268,12 @@ Después de añadir a todos los miembros, guardaremos los cambios si es necesari
 Para el grupo de colaboradores es exactamente igual, por lo que no debería suponer ningún problema.
 
 # CREAR UN index.html
+
+Usaremos un editor de texto o un comando para crear el archivo.
+Guardamos los cambios y empujamos al repositorio remoto:
+
+--> git add index.html
+--> git commit -m "Añadir index.html para GitHub Pages"
+--> git push
+
+
