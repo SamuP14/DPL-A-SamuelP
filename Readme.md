@@ -276,4 +276,10 @@ Guardamos los cambios y empujamos al repositorio remoto:
 --> git commit -m "Añadir index.html para GitHub Pages"
 --> git push
 
+Para habilitar GitHub Pages en la interfaz web, iremos a nuestro repositorio en GitHub, y en la pestaña de configuración iremos a la sección "Pages", seleccionamos la rama que contiene el html, en este caso main, y guardamos los cambios.
+
+Después de configurarlo, nos darán un enlace donde podremos ver nuestra página, el cual es el siguiente:
+
+https://samup14.github.io/DPL-A-SamuelP/
+
 
