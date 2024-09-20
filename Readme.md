@@ -234,11 +234,10 @@ Haremos clic en "Create organization" (Crear organización) para finalizar el pr
 Iremos a GitHub e iniciaremos sesión con nuestra cuenta, si aún no lo hemos hecho.
 Haremos clic en nuestra foto de perfil en la esquina superior derecha y seleccionaremos tu organización (orgdpl-SamuP14).
 
-2. Ir a la configuración de la organización:
-Haremos clic en la pestaña "Settings" (Configuración) en la parte superior de la página de la organización.
+2. Ir a la configuración de equipos de la organización:
+Haremos clic en la pestaña "Teams" (Equipos) en la parte superior de la página de la organización.
 
 3. Crear el equipo "administradores":
-En la barra lateral izquierda, seleccionamos "Teams" (Equipos).
 Hacemos clic en "New team" (Nuevo equipo).
 Nombramos el equipo "administradores".
 Configuramos los permisos como "Admin" para que tengan más control sobre los repositorios.
@@ -250,3 +249,22 @@ Configuramos los permisos como "Write" o "Read" (menos permisos que el administr
 
 5. Finalizar:
 Debemos asegurarnos de revisar los permisos y la configuración de cada equipo para garantizar que estén configurados correctamente.
+
+Para añadir miembros a los equipos, seguiremos los siguientes pasos:
+
+1. Ir a la sección de equipos:
+Haremos clic en la pestaña "Teams" (Equipos) en la barra lateral izquierda.
+
+2. Seleccionar el equipo "administradores":
+Buscamos y hacemos clic en el equipo "administradores".
+
+3. Agregar miembros al equipo:
+Buscamos la opción "Add a member" (Agregar un miembro) o "Manage team" (Gestionar equipo).
+Escribimos el nombre de usuario de GitHub de los miembros que querramos añadir.
+
+4. Confirmar los cambios:
+Después de añadir a todos los miembros, guardaremos los cambios si es necesario.
+
+Para el grupo de colaboradores es exactamente igual, por lo que no debería suponer ningún problema.
+
+# CREAR UN index.html
