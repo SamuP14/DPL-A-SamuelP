@@ -1,5 +1,0 @@
-En phpmyadmin, ir a cuentas de usuario.
-
-Para añadirle una contraseña a root, le damos donde dice esditar privilegios en root localhost.
-
-
