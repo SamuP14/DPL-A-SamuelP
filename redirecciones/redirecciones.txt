@@ -1,0 +1,101 @@
+En un fichero "redirecciones.php" crearemos una estructura de html con un enlace como la siguiente:
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <a href="pagina2.php">Redirección</a>
+    </body>
+    </html>
+
+Luego creamos el fichero "pagina2.php" al que hace referencia el href.
+Su contenido será de momento simplemente un echo:
+
+    <?php
+        echo "Página 2";
+
+Si en nuestro navegador escribimos, en este caso, "http://localhost/dpl/redirecciones.php", y pulsamos el enlace, nos deberá llevar a la página 2.
+
+Ahora, para hacer una redirección, crearemos el fichero "pagina3.php", y le daremos el mismo contenido que al fichero anterior:
+
+    <?php
+        echo "Página 3";
+
+Seguido de esto, en el fichero "pagina2.php" añadiremos la siguiente línea:
+
+    header("location: pagina3.php");
+
+Esto lo que hará es indicar al navegador que debe redirigirse a la página 3, por lo que ahora, al pulsar el enlace, veremos que nos lleva directamente a la página 3.
+
+Ahora lo que haremos será pasar un parámetro:
+
+Para ello, lo primero será indicar el parámetro en el html de la siguiente forma:
+
+    <a href="pagina2.php?name=Joseju">Redirección</a>
+
+En "pagina2.php" comentaremos la línea de la redirección y añadiremos lo siguiente:
+
+    print_r($_GET);
+
+Con esto haremos que imprima por pantalla el array que le hemos pasado mediante el método get. Debería verse algo así:
+
+    Página 2Array ( [name] => Joseju )
+
+Para darle algo de formato, antes de imprimir colocaremos lo siguiente:
+
+    echo "<br>"
+
+Esto hará que aparezca una línea debajo de la otra:
+
+    Página 2
+    Array ( [name] => Joseju )
+
+Ahora, si queremos que esto se imprima en la página 3, será tan fácil como modificar la línea de la redirección de la siguiente manera:
+
+    header("location: pagina3.php?name=".$_GET['name']);
+
+Para que se pueda mostrar en la página 3, añadiremos este fragmento de código:
+
+    echo "<br>";
+    print_r($_GET);
+
+Ahora, cuando pulsemos en el enlace, nos llevará a la página 3 y debería verse así:
+
+    Página 3
+    Array ( [name] => Joseju )
+
+Los ficheros deberían haber quedado de la siguiente forma:
+
+"redirecciones.php":
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <a href="pagina2.php?name=Joseju">Redirección</a>
+    </body>
+    </html>
+
+"pagina2.php":
+
+    <?php
+        echo "Página 2";
+        echo "<br>";
+        print_r($_GET);
+
+        header("location: pagina3.php?name=".$_GET['name']);
+
+"pagina3.php":
+
+    <?php
+        echo "Página 3";
+        echo "<br>";
+        print_r($_GET);
