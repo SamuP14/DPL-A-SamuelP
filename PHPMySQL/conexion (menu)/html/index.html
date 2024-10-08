@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <script type="text/javascript" src="../js/index.js"></script>
+</head>
+<body>
+    <form id="form" method="POST" action="">
+        <div class="form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter the name...">
+            <br/>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter the email...">
+            <br/>
+            <div class="bttns">
+                <input type="submit" id="0" value="Insert" onclick="setAction('../php/insert')">
+                <input type="submit" id="1"  value="Update" onclick="setAction('../php/update.php')">
+                <input type="submit" id="2"  value="Delete" onclick="setAction('../php/delete.php')">
+                <input type="submit" id="3"  value="See Database" onclick="setAction('../php/read.php')">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
