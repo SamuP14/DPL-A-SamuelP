@@ -8,7 +8,7 @@ En esta guía, describimos los pasos que seguimos para alojar nuestro proyecto w
 
 1. **XAMPP**: Proyecto en funcionamiento en nuestro servidor local (localhost).
 2. **Cuenta en InfinityFree**: Nos registramos en [InfinityFree](https://www.infinityfree.net/).
-3. **Cliente FTP**: Recomendamos utilizar un cliente como [FileZilla](https://filezilla-project.org/) para facilitar la transferencia de archivos o bien el administrador de archivos de InfinityFree.
+3. **Cliente FTP**: Utilizamos el cliente [FileZilla](https://filezilla-project.org/) para facilitar la transferencia de archivos.
 
 ---
 
@@ -37,13 +37,7 @@ En esta guía, describimos los pasos que seguimos para alojar nuestro proyecto w
 
 ### Paso 4: Subida de los Archivos a través de Cliente FTP o Administrador de Archivos
 
-#### Opción 1: Uso del Administrador de Archivos de InfinityFree
-
-1. En InfinityFree, seleccionamos **File Manager**.
-2. Navegamos a la carpeta `htdocs` en el servidor remoto.
-3. Subimos los archivos comprimidos o cada archivo del proyecto manualmente.
-
-#### Opción 2: Uso de FileZilla
+#### Uso de FileZilla
 
 1. Abrimos FileZilla e ingresamos los detalles de conexión FTP proporcionados.
    - **Host**: Servidor FTP de InfinityFree.
@@ -51,9 +45,9 @@ En esta guía, describimos los pasos que seguimos para alojar nuestro proyecto w
 2. Nos conectamos y navegamos a la carpeta `htdocs` en el servidor.
 3. Arrastramos los archivos desde `htdocs` en XAMPP y los soltamos en `htdocs` del servidor.
 
-### Paso 5: Configuración de la Base de Datos (Opcional)
+### Paso 5: Configuración de la Base de Datos
 
-Para aquellos proyectos que requieran una base de datos, realizamos los siguientes pasos:
+Para aquellos proyectos que requieran una base de datos, como en este caso, realizamos los siguientes pasos:
 
 1. En InfinityFree, creamos una base de datos desde la sección **MySQL Databases** e ingresamos los detalles en el archivo de configuración del proyecto.
 2. Exportamos la base de datos local desde XAMPP:
@@ -67,15 +61,3 @@ Para aquellos proyectos que requieran una base de datos, realizamos los siguient
 
 1. Con los archivos subidos, verificamos el acceso al sitio usando nuestro dominio.
 2. En caso de errores de conexión a la base de datos, revisamos las credenciales y el archivo de conexión para confirmar que estén correctos.
-
----
-
-## Subida de la Documentación al Repositorio
-
-1. Guardamos este documento en un archivo llamado `Guía_Alojamiento_InfinityFree.md`.
-2. Accedemos al directorio de nuestro repositorio y ejecutamos los siguientes comandos:
-
-   ```bash
-   git add Guía_Alojamiento_InfinityFree.md
-   git commit -m "Agrega guía de alojamiento en InfinityFree"
-   git push origin main
