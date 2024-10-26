@@ -1,82 +1,79 @@
-# Guía para Alojar Páginas en InfinityFree desde XAMPP
+# Guía de Alojamiento de Páginas en InfinityFree desde XAMPP
 
-Este documento describe cómo alojar tu proyecto web desarrollado en XAMPP en un servidor remoto usando InfinityFree.
+En esta guía, describimos los pasos que seguimos para alojar nuestro proyecto web, desarrollado en un servidor local XAMPP, en un servidor remoto de InfinityFree.
 
 ---
 
 ## Requisitos Previos
 
-1. **XAMPP**: Proyecto funcionando en tu servidor local (localhost).
-2. **Cuenta en InfinityFree**: Regístrate en [InfinityFree](https://www.infinityfree.net/).
-3. **Cliente FTP**: Recomendado para subir archivos. Puedes usar [FileZilla](https://filezilla-project.org/) o el administrador de archivos de InfinityFree.
+1. **XAMPP**: Proyecto en funcionamiento en nuestro servidor local (localhost).
+2. **Cuenta en InfinityFree**: Nos registramos en [InfinityFree](https://www.infinityfree.net/).
+3. **Cliente FTP**: Recomendamos utilizar un cliente como [FileZilla](https://filezilla-project.org/) para facilitar la transferencia de archivos o bien el administrador de archivos de InfinityFree.
 
 ---
 
-## Pasos para Alojar en InfinityFree
+## Pasos Realizados para Alojar en InfinityFree
 
-### Paso 1: Preparar los Archivos en XAMPP
+### Paso 1: Preparación de los Archivos en XAMPP
 
-1. Asegúrate de que tu proyecto funcione correctamente en `localhost` usando XAMPP.
-2. Localiza la carpeta de tu proyecto dentro de `htdocs` (generalmente `C:\xampp\htdocs\nombre_del_proyecto`).
-3. Comprime los archivos si prefieres una carga única o selecciona los archivos que deseas subir manualmente.
+1. Confirmamos que el proyecto funciona correctamente en `localhost` usando XAMPP.
+2. Localizamos la carpeta del proyecto dentro de `htdocs` (generalmente en `C:\xampp\htdocs\nombre_del_proyecto`).
+3. Comprimimos los archivos para una carga más sencilla o seleccionamos directamente los archivos a subir.
 
-### Paso 2: Crear un Nuevo Sitio Web en InfinityFree
+### Paso 2: Creación de un Nuevo Sitio Web en InfinityFree
 
-1. Inicia sesión en [InfinityFree](https://www.infinityfree.net/).
-2. Ve a la sección **Create Account**.
-3. Selecciona un nombre de dominio gratuito o utiliza un dominio propio.
-4. Completa la configuración inicial de tu cuenta.
+1. Iniciamos sesión en [InfinityFree](https://www.infinityfree.net/).
+2. Navegamos a la sección **Create Account**.
+3. Seleccionamos un nombre de dominio gratuito o utilizamos un dominio propio.
+4. Completamos la configuración inicial de la cuenta en InfinityFree.
 
-### Paso 3: Obtener los Detalles de FTP
+### Paso 3: Obtención de los Detalles de FTP
 
-1. En el panel de InfinityFree, selecciona el sitio web que creaste.
-2. Haz clic en **Account Details**.
-3. Copia los detalles de acceso FTP:
+1. En el panel de InfinityFree, seleccionamos el sitio web que creamos.
+2. Accedimos a **Account Details** para obtener los detalles de conexión FTP:
    - **Servidor FTP**
    - **Nombre de usuario**
    - **Contraseña**
 
-### Paso 4: Subir los Archivos Usando un Cliente FTP o el Administrador de Archivos
+### Paso 4: Subida de los Archivos a través de Cliente FTP o Administrador de Archivos
 
-#### Opción 1: Administrador de Archivos
+#### Opción 1: Uso del Administrador de Archivos de InfinityFree
 
-1. En InfinityFree, selecciona **File Manager**.
-2. Navega a la carpeta `htdocs` en el servidor remoto.
-3. Sube los archivos comprimidos o directamente los archivos de tu proyecto.
+1. En InfinityFree, seleccionamos **File Manager**.
+2. Navegamos a la carpeta `htdocs` en el servidor remoto.
+3. Subimos los archivos comprimidos o cada archivo del proyecto manualmente.
 
-#### Opción 2: FileZilla
+#### Opción 2: Uso de FileZilla
 
-1. Abre FileZilla e ingresa los detalles de conexión FTP.
+1. Abrimos FileZilla e ingresamos los detalles de conexión FTP proporcionados.
    - **Host**: Servidor FTP de InfinityFree.
-   - **Username** y **Password**: Obtenidos en el Paso 3.
-2. Conéctate y navega a la carpeta `htdocs` en el servidor.
-3. Arrastra los archivos desde la carpeta `htdocs` de tu proyecto en XAMPP y suéltalos en `htdocs` en el servidor.
+   - **Usuario** y **Contraseña**: Obtenidos en el Paso 3.
+2. Nos conectamos y navegamos a la carpeta `htdocs` en el servidor.
+3. Arrastramos los archivos desde `htdocs` en XAMPP y los soltamos en `htdocs` del servidor.
 
-### Paso 5: Configuración de Base de Datos (Opcional)
+### Paso 5: Configuración de la Base de Datos (Opcional)
 
-Si tu proyecto utiliza una base de datos, sigue estos pasos:
+Para aquellos proyectos que requieran una base de datos, realizamos los siguientes pasos:
 
-1. En InfinityFree, ve a la sección **MySQL Databases**.
-2. Crea una nueva base de datos e ingresa los detalles en tu archivo de configuración.
-3. Exporta tu base de datos desde XAMPP:
-   - Abre `phpMyAdmin` en XAMPP.
-   - Selecciona tu base de datos y haz clic en **Exportar**.
-4. Importa la base de datos en InfinityFree:
-   - En InfinityFree, ve a **phpMyAdmin** y selecciona la base de datos que creaste.
-   - Importa el archivo SQL exportado desde XAMPP.
+1. En InfinityFree, creamos una base de datos desde la sección **MySQL Databases** e ingresamos los detalles en el archivo de configuración del proyecto.
+2. Exportamos la base de datos local desde XAMPP:
+   - Accedimos a `phpMyAdmin` en XAMPP.
+   - Seleccionamos la base de datos y clicamos en **Exportar**.
+3. Importamos la base de datos en InfinityFree:
+   - En InfinityFree, ingresamos a **phpMyAdmin** y seleccionamos la base de datos creada.
+   - Realizamos la importación del archivo SQL exportado previamente.
 
-### Paso 6: Verificar el Sitio Web
+### Paso 6: Verificación del Sitio Web
 
-1. Una vez cargados los archivos, accede a tu dominio para verificar que el sitio esté funcionando.
-2. Si ves errores de configuración de base de datos, verifica las credenciales y el archivo de conexión.
+1. Con los archivos subidos, verificamos el acceso al sitio usando nuestro dominio.
+2. En caso de errores de conexión a la base de datos, revisamos las credenciales y el archivo de conexión para confirmar que estén correctos.
 
 ---
 
-## Subir la Documentación al Repositorio
+## Subida de la Documentación al Repositorio
 
-1. Guarda este documento en un archivo llamado `Guía_Alojamiento_InfinityFree.md`.
-2. Abre la terminal y asegúrate de estar en el directorio de tu repositorio.
-3. Ejecuta los siguientes comandos:
+1. Guardamos este documento en un archivo llamado `Guía_Alojamiento_InfinityFree.md`.
+2. Accedemos al directorio de nuestro repositorio y ejecutamos los siguientes comandos:
 
    ```bash
    git add Guía_Alojamiento_InfinityFree.md
