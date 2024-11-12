@@ -9,7 +9,7 @@
 
 1. **Acceso como Superusuario:**
    ```bash
-   sudo -i
+   sudo su
    ```
 
 2. **Actualizar Repositorios:**
