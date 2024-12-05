@@ -3,38 +3,41 @@
 1) Nos pondremos en la terminal como superuser
 
     ~~~
-    # sudo su
+    /# sudo su
     ~~~
 
 2) Actualizamos los paquetes de apt e instalamos
 
     ~~~
-    # apt update
-    # apt install nginx
+    /# apt update
+    /# apt install nginx
     ~~~
 
 3) Para comprobar el estado de Nginx utilizaremos lo siguiente
 
     ~~~
-    # nginx -t
+    /# nginx -t
+    nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+    nginx: configuration file /etc/nginx/nginx.conf test is successful
+
     ~~~
 
     También podemos usar `systemctl`:
 
     ~~~
-    # systemctl status nginx
+    /# systemctl status nginx
     ~~~
 
 4) Vamos a ver el contenido de la carpeta de Nginx
 
     Nos movemos a la carpeta `/etc/nginx`
     ~~~
-    # cd /etc/nginx/
+    /# cd /etc/nginx/
     ~~~
 
     Para poder ver su contenido usaremos `tree`:
     ~~~
-    # tree .
+    /# tree .
     . 
     ├── conf.d
     ├── fastcgi.conf
@@ -60,38 +63,38 @@
 
     Si nos movemos a la carpeta `sites-available` podremos ver lo siguiente:
     ~~~
-    # cd /etc/nginx/sites-available/
-    # tree .
+    /# cd /etc/nginx/sites-available/
+    /# tree .
     .
     └── default
     ~~~
 
     Si nos movemos a la carpeta `sites-enabled` podremos ver lo siguiente: 
     ~~~
-    # cd /etc/nginx/sites-enabled
-    # ls -l
-    >> total 0
-    >> lrwxrwxrwx 1 root root 34 dic  3 14:53 default -> /etc/nginx/sites-available/default
+    /# cd /etc/nginx/sites-enabled
+    /# ls -l
+    total 0
+    lrwxrwxrwx 1 root root 34 dic  3 14:53 default -> /etc/nginx/sites-available/default
     ~~~
 
     Si queremos ver el contenido del archivo default, basta con hacer un `cat` o usar `nano`:
 
     ~~~
-    # cat default
+    /# cat default
     >> (contenido del fichero)
-    # nano
+    /# nano
     ~~~
 
 5) Vamos a ver el contenido que se mostrará en la web
 
     Nos movemos a la carpeta `/var/www/html`
     ~~~
-    # cd /var/www/html
+    /# cd /var/www/html
     ~~~
 
     Para poder ver su contenido usaremos `tree`:
     ~~~
-    # tree .
+    /# tree .
     .
     ├── index.html
     ├── index.nginx-debian.html
@@ -102,13 +105,13 @@
 
     Vamos a borrar los ficheros `index.html` y `index.nginx-debian.html` para crear el nuestro propio:
     ~~~
-    # rm index.html
-    # rm index.nginx-debian.html
+    /# rm index.html
+    /# rm index.nginx-debian.html
     ~~~
 
     Para crear nuestro html, usaremos nano:
     ~~~
-    # nano index.html
+    /# nano index.html
     ~~~
 
     Dentro del fichero añadiremos una etiqueta sencilla para mostrar un hola mundo:    
