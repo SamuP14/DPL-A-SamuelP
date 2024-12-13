@@ -1,35 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empresa *</title>
-</head>
-<body>
-    <h1>Esta es la empresa *</h1>
-</body>
-</html>
+apt install python3-certbot-nginx
+nginx -t
+systemctl status nginx
+nano etc/nginx/sites-available/letsencrypt.com.conf
 
-<VirtualHost *:80>
-    ServerName empresaX.com
-    ServerAlias www.empresaX.com
-    ServerAdmin webmaster@empresaX.com
-    DocumentRoot /var/www/html/empresaX.com/public
 
-    <Directory /var/www/html/empresaX.com/public>
-        Options -Indexes +FollowSymLinks
-        AllowOverride All
-    </Directory>
-</VirtualHost>
 
-server {
-    listen 80;               # Escucha en el puerto 80
-    server_name localhost;   # Define localhost como el nombre del servidor
 
-    root /var/www/html;      # Define la raíz del sitio
-    index index.html index.htm;
-
-    location / {
-        try_files $uri $uri/ =404;  # Manejo de rutas
-    }
-}
+---------IP---------
+10.0.2.15
